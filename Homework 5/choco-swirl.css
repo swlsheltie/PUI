@@ -1,0 +1,88 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(dot-background.png);
+    background-size: cover;
+
+}
+
+
+
+.topnav {
+    background-color: #FFECF1;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.fullwidth {
+    width: 100%;
+    text-align: center;
+}
+
+
+#bottom {
+    display: flex;
+
+}
+
+#sidenav {
+    width: 15%;
+    /*height: 75%;*/
+    outline: solid yellow;
+}
+
+#sections {
+    list-style: none;
+}
+
+#main{
+    display: block;
+    outline: solid blue;
+    width: 85%;
+}
+
+#container {
+    display: flex;
+    outline: solid red;
+}
+
+
+#lil-pics {
+    width: 8%;
+    outline: solid orange;
+    margin-right: 2%;
+}
+.item {
+    margin-bottom: 4%;
+    width: 100%;
+}
+
+
+#big-pic {
+    /*width: 100%;*/
+    outline: solid pink;
+    margin-right: 2%;
+}
