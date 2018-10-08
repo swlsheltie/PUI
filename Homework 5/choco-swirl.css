@@ -23,7 +23,7 @@ time, mark, audio, video {
 }
 
 body {
-    background-image: url(dot-background.png);
+    background-image: url(imgs/dot-background.png);
     background-size: cover;
     /*display: flex;*/
       position: relative;
