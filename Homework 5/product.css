@@ -1,3 +1,5 @@
+/*reset from meyer web see citation @ bottom*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -29,7 +31,7 @@ body {
       overflow-x: hidden;
 }
 
-
+/*set up h1-h6*/
 h1 {
 
     font-family: sans-serif;
@@ -169,7 +171,7 @@ select {
     /*outline: solid orange;*/
     m/*argin-left: auto;
     margin-right: 5%;*/
-    margin-top: 5%;
+    /*margin-top: 5%;*/
 
 }
 
@@ -217,3 +219,5 @@ select {
 .activate {
     text-decoration: underline;
 }
+
+/*CSS RESET FROM HERE https://meyerweb.com/eric/tools/css/reset/

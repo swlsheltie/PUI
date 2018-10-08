@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>To Do App</title>
-    <meta charset="UTF-8">
-    <!-- styles -->
-    <link rel="stylesheet" type="text/css" href="product.css">
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <title>To Do App</title>
+  <meta charset="UTF-8">
+  <!-- styles -->
+  <link rel="stylesheet" type="text/css" href="product.css">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
-<div class="topnav">
+  <!-- nav -->
+  <div class="topnav">
 
 
-        <div class= "leftside">
-    <a  href="index.html">About</a>
-    <a >Contact</a>
-  </div>
+    <div class= "leftside">
+      <a  href="index.html">About</a>
+      <a >Contact</a>
+    </div>
     <div class="rightside">
-    <a class="active" >Buns</a>
-    <a >Cart</a>
+      <a class="active" >Buns</a>
+      <a >Cart</a>
+    </div>
   </div>
-</div>
 
 
-<div id="top" >
+  <div id="top" >
     <h2>Buns</h2>
 
-</div>
-<div id="middle" class="fullwidth">
+  </div>
+  <!-- create containers for main sections  -->
+  <div id="middle" class="fullwidth">
    <div id = "filter">
-      <h3> Filter</h3>
-      <select>
-        <option >All</option>
-        <option >Gluten-free</option>
-        <option >Vegan</option>
-        <option >Sugar-free</option>
-      </select>
-    </div>
+    <h3> Filter</h3>
+    <select>
+      <option >All</option>
+      <option >Gluten-free</option>
+      <option >Vegan</option>
+      <option >Sugar-free</option>
+    </select>
+  </div>
 
-    <div id= "sort">
-      <h3>Sort By</h3>
-      <select>
-        <option >Most popular</option>
-        <option >Newest</option>
-        <option >Price: low to high</option>
-        <option >Price: high to low</option>
-      </select>
-    </div>
+  <div id= "sort">
+    <h3>Sort By</h3>
+    <select>
+      <option >Most popular</option>
+      <option >Newest</option>
+      <option >Price: low to high</option>
+      <option >Price: high to low</option>
+    </select>
+  </div>
 </div>
 
+<!-- main sections, mainly use flex box  -->
 
 <div id="bottom">
   <div id="sidenav">
@@ -63,48 +66,48 @@
   <div id="main">
     <div class="container">
       <div class="item" >
-          <img src="bun1.png">
-          <h4>Chocolate Swirl</h4>
-          <h5>$5/bun</h5>
+        <img src="bun1.png">
+        <h4>Chocolate Swirl</h4>
+        <h5>$5/bun</h5>
       </div>
       <a href = "choco-swirl.html"><div class="item" id = "choco-swirl">
         <img src="bun2.png">
         <h4>Caramel Pecan</h4>
-          <h5>$8/bun</h5>
+        <h5>$8/bun</h5>
       </div></a>
       <div class="item">
         <img src="bun3.png">
         <h4>Original</h4>
-          <h5>$2/bun</h5>
+        <h5>$2/bun</h5>
       </div>
       <div class="item">
         <img src="bun4.png">
         <h4> Orange Toffee</h4>
-          <h5>$5/bun</h5>
+        <h5>$5/bun</h5>
       </div>
     </div>
 
     <div class="container">
       <div class="item">
-<img src="bun5.png">
-<h4>Walnut</h4>
-          <h5>$5/bun</h5>
+        <img src="bun5.png">
+        <h4>Walnut</h4>
+        <h5>$5/bun</h5>
       </div>
       <div class="item">
         <img src="bun6.png">
         <h4>Hazelnut</h4>
-          <h5>$5/bun</h5>
+        <h5>$5/bun</h5>
       </div>
       <div class="item">
         <img src="bun7.png">
         <h4> Blackberry</h4>
-          <h5>$5/bun</h5>
+        <h5>$5/bun</h5>
       </div>
 
       <div class="item">
         <img src="bun5.png">
         <h4> Original-GF</h4>
-          <h5>$5/bun</h5>
+        <h5>$5/bun</h5>
       </div>
     </div>
   </div>
@@ -115,3 +118,5 @@
 </body>
 
 </html>
+
+<!-- TOP NAV MODIFED FROM HERE https://www.w3schools.com/howto/howto_js_topnav.asp -->
