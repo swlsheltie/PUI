@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To Do App</title>
+  <meta charset="UTF-8">
+  <!-- styles -->
+  <link rel="stylesheet" type="text/css" href="cart.css">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+</head>
+
+<body onload="cart()">
+  <div class="topnav">
+
+
+    <div class= "leftside">
+      <a  href="index.html">About</a>
+      <a >Contact</a>
+    </div>
+    <div class="rightside">
+      <a href="product.html">Buns</a>
+      <a class="active" id ="navCartButton">Cart</a>
+    </div>
+  </div>
+
+
+  <div id="top" class="fullwidth">
+    <h2>Cart</h2>
+  </div>
+  <div id="sitemap">
+    <p><- Back to all buns </p>
+  </div>
+
+  <div id="bottom">
+
+    <div id="main">
+
+      <!-- CART OBEJCTS ADDED FROM JAVASCRIPT  -->
+    </div>
+
+<div id="summary">
+    <div >
+      <div id="header">
+        <h3>
+          Summary
+        </h3>
+      </div>
+
+      <div class="info">
+        <div class="line">
+        <h4>
+          Buns
+        </h4>
+        <h4 id="bunAmount">
+          amount
+        </h4>
+      </div>
+      <div class="line">
+        <h4>
+          Total
+        </h4>
+        <h4 id="totalAmount">
+          amount
+        </h4>
+      </div>
+
+    </div>
+
+<button>
+  check out
+</button>
+</div>
+</div>
+
+</body>
+
+</html>
+
+<!-- TOP NAV MODIFED FROM HERE https://www.w3schools.com/howto/howto_js_topnav.asp -->

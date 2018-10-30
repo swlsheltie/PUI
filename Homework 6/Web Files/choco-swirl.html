@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To Do App</title>
+  <meta charset="UTF-8">
+  <!-- styles -->
+  <link rel="stylesheet" type="text/css" href="choco-swirl.css">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <div class="topnav">
+
+
+    <div class= "leftside">
+      <a  href="index.html">About</a>
+      <a >Contact</a>
+    </div>
+    <div class="rightside">
+      <a class="active" >Buns</a>
+      <a href = "cart.html" id ="navCartButton">Cart</a>
+    </div>
+  </div>
+
+
+  <div id="top" class="fullwidth">
+    <h2>Buns</h2>
+  </div>
+  <div id="sitemap">
+    <p> Buns // <a href="product.html">Classic </a>// Chocolate Swirl </p>
+  </div>
+
+  <div id="bottom">
+    <div id="sidenav">
+      <ul id="sections">
+        <a href="product.html"><li class="activate" >Classic</li></a>
+        <li>Specialty</li>
+        <li>Seasonal</li>
+        <li>Custom</li>
+      </ul>
+    </div>
+
+    <div id="main">
+      <div id = "container">
+        <div id="lil-pics">
+          <div class="item">
+            <img src="imgs/small-1.png"/>
+          </div>
+          <div class="item">
+            <img src="imgs/small-2.png"/>
+          </div>
+          <div class="item">
+            <img src="imgs/small-3.png"/>
+          </div>
+
+        </div>
+        <div id="big-pic">
+          <div class="item">
+            <img id="largeImage" src="imgs/large.png"/>
+          </div>
+
+        </div>
+
+        <!-- item details -->
+        <div id="details">
+          <div id="bun-name">
+            <h3>Chocolate Swirl</h3>
+          </div>
+          <div id="glaze" class="subhead">
+            <h4>Glaze</h4>
+            <select id="glazeOption" onchange="glazeImage()">
+              <option>None</option>
+              <option  id="chocolateGlaze" >Chocolate</option>
+              <option  id="vanillaGlaze" >Vanilla</option>
+              <option  id="orangeGlaze" >Orange Glaze</option>
+            </select>
+          </div>
+          <div id="quantity" class="subhead">
+            <h4>Quantity</h4>
+            <select id="quantOption">
+              <option >One</option>
+              <option >Three</option>
+              <option >Six</option>
+              <option >Twelve</option>
+            </select>
+          </div>
+          <div class="buttons">
+            <button onclick="addCart()">Add to Cart</button>
+            <button>Buy Now</button>
+          </div>
+
+
+        </div>
+      </div>
+
+
+<!-- further info incl nutrition facts and reviews -->
+      <div id="further-info">
+        <div class="smallinfo">
+          <!-- <br> -->
+          <h3>Health Information</h3>
+          <br>
+          <p>This was calculated for the recipe as written, using 2 cups of whole wheat flour. If any substitutions are made, the Nutrition Information may change.</p>
+          <br>
+          <img width="60%" src="imgs/nutrition.png">
+
+
+
+        </div>
+        <div class="smallinfo">
+          <h3>Reviews</h3>
+          <br>
+
+          <h5> Always craving these!</h5>
+          <h5>★ ★ ★ ★ </h5>
+          <p>When I first saw these 100 Calorie Snacks from SlimFast I wasn't sure if they were just going to be okay or really bad. Usually for me low calorie snacks tend to taste bland and often don't meet my hunger needs. I had only but a small bag which is a one serving. I was actually saving them for when I went out to run some errands but one night I was so hungry and it was kind of late to make something to eat. So I opened the bag of Slim Fast Advanced Nutrition Drizzled Crisps and was pleased with the smell of the product. It smelled sweet and just like Cinnamon Bun Swirls! </p>
+          <h6> -Landen </h6>
+
+          <br>
+
+          <h5> Melt in your mouth!</h5>
+          <h5>★ ★ ★  </h5>
+          <p>These are delicious! Unfortunately, today I had to eat my very first packet of these with a spoon! I was waiting at the door when UPS arrived and anxiously took it from his hands to try this new snack. But it is May and I'm in Tampa; I guess all day on the truck was enough to melt my entire box! What a waste! Aside from the poor delivery issue, I believe this is a perfect yummy snack for us deprived calorie-counters.</p>
+          <h6> -Tracy </h6>
+        </div>
+      </div>  
+    </div>
+
+
+
+  </div>
+
+  <div id="endbutton">
+   <a href = "product.html"><button>Back to all buns </button></a>
+
+ </div>
+
+
+
+
+</body>
+
+
+</html>
+
+<!-- TOP NAV MODIFED FROM HERE https://www.w3schools.com/howto/howto_js_topnav.asp -->

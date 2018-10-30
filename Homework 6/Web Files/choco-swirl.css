@@ -1,0 +1,302 @@
+/*reset from meyer web see citation @ bottom*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    background-image: url(imgs/dot-background.png);
+    background-size: cover;
+    /*display: flex;*/
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+}
+
+
+
+h2 {
+    font-family: sans-serif;
+    font-size: 4em;
+    color: #00346F;
+    text-align: center;
+    font-weight: bold;
+
+}
+h3 {
+    font-family: sans-serif;
+    font-size: 2em;
+    color: #00346F;
+    /*text-align: center;*/
+    font-weight: bold;
+   margin-right: 1em;
+   margin-top: auto;
+   margin-bottom: auto;
+}
+
+h4 {
+    font-family: sans-serif;
+    font-size: 1.3em;
+    color: #00346F;
+    /*text-align: center;*/
+   /* font-weight: bold;*/
+   margin-right: 1em;
+   margin-top: auto;
+   margin-bottom: auto;
+}
+
+h5 {
+    font-family: sans-serif;
+    font-size: 1.3em;
+    color: #00346F;
+    /*text-align: center;*/
+   /* font-weight: bold;*/
+   margin-right: 1em;
+   margin-top: auto;
+   margin-bottom: auto;
+}
+
+h6{
+     font-family: sans-serif;
+    font-size: 1em;
+    color: #00346F;
+    /*text-align: center;*/
+    font-weight: bold;
+   margin-right: 1em;
+   margin-top: 0.5em;
+   margin-bottom: auto;
+
+
+}
+p {
+    font-family: sans-serif;
+    color: #50E3C2;
+}
+.topnav {
+    background-color: #FFECF1;
+    overflow: hidden;
+    padding: 2em 0;
+    /*outline: solid 50px red;*/
+}
+
+.leftside {
+    float: left;
+}
+.rightside {
+    float: right;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    /*float: left;*/
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #00346F;
+    text-align: center;
+    padding: 0 1em;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    /*background-color: #4CAF50;*/
+    color: white;
+}
+
+#top {
+    margin-top: 1em;
+}
+
+.fullwidth {
+    width: 100%;
+    text-align: center;
+}
+
+
+#bottom {
+    display: flex;
+
+}
+
+#sitemap {
+    width: 85%;
+    margin-left: auto;
+    padding-bottom: 1em;
+
+}
+
+#sitemap p {
+    font-weight: bold;
+}
+
+
+/*set up side nav same as product page*/
+#sidenav {
+    width: 15%;
+    /*outline: solid red;*/
+    display: inline-block;
+}
+
+#sidenav ul li {
+    font-family: sans-serif;
+    font-size: 1.3em;
+    color: #00346F;
+   margin-left: 2.5em;
+   list-style: none;
+   line-height: 1.8em;
+}
+/*bold on hover*/
+#sidenav ul li:hover {
+    font-weight: bold
+}
+
+#sections {
+    list-style: none;
+}
+
+/*main section */
+#main{
+    display: block;
+    /*outline: solid blue;*/
+    width: 85%;
+}
+
+#container {
+    display: flex;
+    padding-bottom: 2%;
+    border-bottom: dotted #00346F;
+}
+
+
+#lil-pics {
+    width: 8%;
+    /*outline: solid orange;*/
+    margin-right: 2%;
+}
+.item {
+    margin-bottom: 4%;
+    width: 100%;
+}
+/*set up pics -- if interactive, small images would swap out the large image on hover*/
+
+#big-pic {
+    /*width: 100%;*/
+    /*outline: solid pink;*/
+    margin-right: 2%;
+}
+
+
+#bun-name{
+    margin: 5% 0;
+}
+
+.subhead {
+    margin: 5% 0;
+    /*outline: solid red;*/
+}
+.subhead select{
+    margin-top: 2%;
+}
+
+#further-info {
+    display: flex;
+    margin: 2% 0 ;
+    border-bottom: dotted #00346F;
+    padding-bottom: 2%;
+}
+
+select {
+    background-color: white;
+    border: solid #50E3C2;
+    font-family: sans-serif;
+    font-size: 1.3em;
+    color: #00346F;
+    text-align: center;
+    width: 10em;
+    height: 2em;
+   /* font-weight: bold;*/
+   /*margin-right: 1em;*/
+}
+
+.buttons {
+    display: flex;
+}
+
+button {
+    background-color: #00346F;
+    width: 6em;
+    height: 4rem;
+    border: none;
+    border-radius: 5em;
+    display: block;
+    /*margin: auto;*/
+    /*margin-right: 3%;*/
+    font-family: sans-serif;
+    font-size: 1.5em;
+    color: #50E3C2;
+    text-decoration: none;
+    cursor: pointer;
+    /*margin: 1.5em auto;*/
+    margin-right: 1.4em ;
+
+}
+
+.smallinfo {
+    width: 35%;
+    margin-right: 8%;
+
+}
+
+#endbutton button {
+    width: 15em;
+    margin: 0 auto;
+    text-decoration: none;
+    margin-bottom: 3%;
+}
+
+a:visited {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.activate {
+    text-decoration: underline;
+}
+
+/*CSS RESET FROM HERE https://meyerweb.com/eric/tools/css/reset/
