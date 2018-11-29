@@ -54,8 +54,8 @@ function plusDivs(image) {
 
     var name = "project"
     var num = String(num)
-    console.log("images/"+num+"-"+sub_num+".png")
-    image.src="images/"+num+"-"+sub_num+".png"
+    console.log("assets/images/"+num+"-"+sub_num+".png")
+    image.src="assets/images/"+num+"-"+sub_num+".png"
     }
 
 }
