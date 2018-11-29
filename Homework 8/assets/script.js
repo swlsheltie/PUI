@@ -1,61 +1,35 @@
-// menu
 
-// function showMobileNav() {
-//     console.log("clicked")
-//     let gridDisplay = window.getComputedStyle(document.querySelector('#grid')).display
-//     let grid =document.getElementById("grid")
-//     let mobileMenu = document.getElementById("mobileMenuItems")
-    
-    
-//     // console.log(grid.style.display)
-//     if (gridDisplay=="inline-block") {
-//         console.log("hello poop")
-//         grid.style.display = "none"
-//         mobileMenu.style.display="inline-block"
-//     }
-//     if (gridDisplay=="none") {
-//         grid.style.display = "inline-block"
-//          mobileMenu.style.display="none"
-// }
-// }
 
+//CHANGING IMAGES ON INDEX.HTML//
 // ////////////////////////////
 var nameheight = window.getComputedStyle(document.querySelector('#nameHeight')).height
 var menu = document.getElementById( 'moremenu' );
 
 
-var curr_pic_position = [0,0,0,0,0,0,0,0,0,0,0,0,0] //13
-var projpic_totals = [2,1,0,2,5,4,0,0,0,0,0,0,0]
+var curr_pic_position = [0,0,0,0,0,0,0,0,0,0,0,0,0] // USE THIS TO RUN THROUGH THE IMAGES
+var projpic_totals = [2,1,0,2,5,4,0,0,0,0,0,0,0] //TOTAL NUMBER OF IMAGES IN THE LOOP
 var randomX
 var randomY
 function plusDivs(image) {
     if (projpic_totals[image.id] ==0) {
-        console.log("gif")
+        // console.log("gif")                   //ONE PROJECT IMAGE WITH GIF...DON'T LOOP
         return 
     }
     else {
     num = image.id
     totalpix = projpic_totals[num]
-    console.log(image)
-    console.log(curr_pic_position)
-    console.log(projpic_totals[num])
-    
-    
-    
+    // console.log(image)
+    // console.log(curr_pic_position)
+    // console.log(projpic_totals[num])
     var current_num = curr_pic_position[num]
-    
-    console.log("current_num", current_num)
-    
-    var sub_num = (++current_num)%totalpix
-
-    console.log("sub_num", sub_num)
-    
-    curr_pic_position[num]=++curr_pic_position[num]
-
+    // console.log("current_num", current_num)
+    var sub_num = (++current_num)%totalpix          //LOOP VIA MOD
+    // console.log("sub_num", sub_num)
+    curr_pic_position[num]=++curr_pic_position[num]  //CALL THE IMAGES FROM THE FOLDERS
     var name = "project"
     var num = String(num)
-    console.log("assets/images/"+num+"-"+sub_num+".png")
-    image.src="assets/images/"+num+"-"+sub_num+".png"
+    // console.log("assets/images/"+num+"-"+sub_num+".png") 
+    image.src="assets/images/"+num+"-"+sub_num+".png" //SET THE IMAGES
     }
 
 }
@@ -66,25 +40,25 @@ var globalHoverId;
 function hoverImage(image){
     console.log("hoverimage")
     clearInterval(globalHoverId)
-    globalHoverId = setInterval(function() {
+    globalHoverId = setInterval(function() {            //USE SET INTERVAL TO CONTINUOUSLY LOOP THROUGH THE IMAGES
         plusDivs(image);
-    }, 1000);
+    }, 1000);                                           
 };
 
 function mouseOutImage() {
-    clearInterval(globalHoverId);
+    clearInterval(globalHoverId);                       //CLEAR ON MOUSEOUT
 }
 
-projects = document.querySelectorAll(".project")
+projects = document.querySelectorAll(".project")        //SET EVENT LISTENER ON ALL PROJECT DIVS
 
 for (let project of projects) {
 
         project.addEventListener("mouseover", function(event) {
-            console.log(project)
+            // console.log(project)
         project.querySelector(".text h2").style.textDecoration="underline"
        
         
-        image =project.querySelector(".image")
+        image =project.querySelector(".image")                  //SET THE IMAGES INTO THE PROJECT DIV BOXES
         image.style.display="block"
         image.style.zIndex="10"
         
@@ -97,20 +71,20 @@ for (let project of projects) {
         
         project.querySelector("h2").style.textDecoration="none"
          
-        image =project.querySelector(".image")
+        image =project.querySelector(".image")                     //SET MOUSEOUT EVENT, CLEAR ALL CHANGES
         image.style.display="none"
         image.style.zIndex="0"
         mouseOutImage()
 });
 }
 
-giffys = document.querySelectorAll(".underlineGif")
+giffys = document.querySelectorAll(".underlineGif")                 //SPECIAL EFFECT ON SOME OF THE TEXT IN THE PROJECTS, SHOW GIF
 
 for (let gif of giffys) {
     gif.addEventListener("mouseover", function(event){
         var pos = gif.getBoundingClientRect();
-        console.log(pos)
-        var posX =pos.left +window.scrollX
+        console.log(pos)    
+        var posX =pos.left +window.scrollX                  //SET POSITION OF THE IMAGE
         var posY =pos.top +window.scrollY
         console.log(posX, posY)
         
@@ -118,7 +92,7 @@ for (let gif of giffys) {
         
         selectedGif.style.left =  String(posX+"px")
         selectedGif.style.top = String(posY+"px")
-        console.log("selc", selectedGif.style.left, selectedGif.style.top)
+        console.log("selc", selectedGif.style.left, selectedGif.style.top)      //DISPLAY THE IMAGE
         selectedGif.style.display="block"
         
         
@@ -137,10 +111,9 @@ function getPosition( element ) {
 
 
 
-window.addEventListener("load", function (){
-    // console.log("FUCKKKK!");
+window.addEventListener("load", function (){                        //SHOW MOBILE MENU BY REMOVING THE MAIN GRID, AND REPLACING IT WITH MENU
     
-   
+                                
     
     
     if (document.getElementById("arrowHeight") != null ) {
@@ -153,12 +126,12 @@ window.addEventListener("load", function (){
     // console.log('here')
     let gridDisplay = window.getComputedStyle(document.querySelector('#grid')).display
     let grid = document.getElementById("grid")
-    let mobileMenu = document.getElementById("mobileMenuItems")
+    let mobileMenu = document.getElementById("mobileMenuItems") 
     // console.log("clicked")
     
     // console.log(grid.style.display)
     if (gridDisplay != "none") {
-        console.log("hello poop")
+        // console.log("hello poop")
         grid.style.display = "none"
         mobileMenu.style.display="inline-block"
     }
@@ -169,7 +142,7 @@ window.addEventListener("load", function (){
 });
 });
 
-window.addEventListener("resize", function() {
+window.addEventListener("resize", function() {                                          //MAKE SURE THE MOBILE MENU BUTTON IS IN THE RIGHT PLACE RELATIVE TO THE HEADER (NAME)
     // var mobile;
     // if (window.innerWidth<575.98) {
     //     mobile=true;
@@ -182,21 +155,6 @@ window.addEventListener("resize", function() {
     if (document.getElementById("arrowHeight") != null ) {
     document.getElementById("arrowHeight").style.height = nameheight;
     
-    // if (mobile) {
-    // var hidden = document.getElementsByClassName("projectMobileOnly")
-    // console.log(hidden)
-    // for (var i =0; i<hidden.length; i++) {
-    //     hidden[i].classList.toggle("projectMobileOnly")
-    //     hidden[i].classList.toggle("projectMobileShow")
-    // }
-    // }
-    // if (window.innerWidth> 575.98) {
-    // var shown = document.getElementsByClassName("projectMobileShow")
-    // console.log(shown)
-    // for (var i =0; i<shown.length; i++) {
-    //     shown[i].classList.toggle("projectMobileShow")
-    //     shown[i].classList.toggle("projectMobileOnly")
-    // }
-    // }
+   
     }
 })

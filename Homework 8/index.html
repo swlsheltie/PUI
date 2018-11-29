@@ -5,14 +5,17 @@
   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0" />
   <title>. s . l i n .</title>
+
+  <!-- USE RESET.CSS TO GET A CLEAN SLATE -->
   <meta name="description" content="slin porto">
  <link rel="stylesheet" href="assets/CSS/reset.css">
   <link rel="stylesheet" href="assets/CSS/style-4.css">
  
-
+<!-- NEUE HAAS UNICA IS FROM TYPEKIT -->
 <link rel="stylesheet" href="https://use.typekit.net/tjp7wie.css">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- USE GOOGLE ANALYTICS TO TRACK PEOPLE ON MY SITE, WILL BE USEFUL WHEN INTERVIEWING POSSIBLY... -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129726498-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -29,7 +32,7 @@
 
 
 <body >
-    
+    <!-- HEADER CONTAINS MY MENU, GREEN DOTS, AND HEADER -->
    <div  id="header"  >
         <div id="spacer"  class="hide">
            
@@ -58,10 +61,10 @@
             </ul>
     </div>
     
-
+    <!-- STRUCTURE IS THE SAME ON MOST OF THE PAGES, USING AN OVERARCHING GRID, CONTAINERS, AND SUB CONTAINERS. SIMPLE. -->
     <div id="grid" >
     <div class="container">
-        
+        <!-- USING A JAVASCCRIPT SNIPPET TO LINK TO PAGES.... PROB NOT THE BEST, BUT IT WORKS... -->
         <div onclick="project0()"  class="project medium" id="project0">
             <section class="text">
             <h2>
@@ -258,6 +261,8 @@
 </body>
 
 <script >
+
+
     var winwidth = window.innerWidth;
     var winheight= window.innerHeight;
     console.log(winwidth);
@@ -272,6 +277,8 @@
           return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
         } 
         
+
+    // DRAW GREEN DOT STICKERS RANDOMLY ON THE PAGE! CUTE
     var rand1x = getRandomIntWidth(0, winwidth)
     var rand1y = getRandomIntHeight(0,winheight)
     
@@ -291,6 +298,8 @@
     document.getElementById("sticker3").style.top=(rand3y+"px")
     
     
+
+    // AGAIN, PROB NOT THE BEST WAY TO LINK TO PAGES....
     function project0() {
         window.location.href = "project0.html";
     }
